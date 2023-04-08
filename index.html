@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <title>Twitter profile page</title>
 </head>
 <body>
-    
+    <div class="container header">
+        <div class="row">
+            <div class="col-md buttons" name="buttons">
+                <i class="fa-solid fa-house"></i><span>Home</span>
+                <i class="fa-sharp fa-solid fa-bell"></i><span>Notifications</span>
+                <i class="fa-solid fa-envelope"></i><span>Messages</span>
+            </div>
+            <div class="col-md twitter-icon" name="twitter-icon">
+                <i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i>
+            </div>
+            <div class="col-md more-options" name="more options">
+                <input type="search" class="form-control ds-input" placeholder="Search Twitter">
+                <div class="profile-img2">
+                    <span>Profile picture</span>
+                </div>
+                <div class="tweet-button">
+                    <i class="fa-solid fa-pen-to-square"></i><span>Tweet</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-cover">
+        <span>Cover picture</span>
+    </div>
+    <div class="main-container">
+        <div class="container profile-bar">
+            <div class="row">
+                <div class="col-md">
+                    <div class="profile-img">
+                        <span>Profile picture</span>
+                    </div>
+                </div>
+                <div class="col-md profile-menu">
+                    <span>TWEETS</span>
+                    <span>FOLLOWING</span>
+                    <span>FOLLOWERS</span>
+                    <span>FAVORITES</span>
+                </div>
+                <div class="col-md settings-button">
+                    <button type="button" class="btn btn-light">Edit profile</button>
+                </div>   
+            </div>
+        </div>
+        <div class="container profile-page" name="profile page">
+            <div class="row">
+              <div class="col-sm" name="multimedia">
+                One of three columns
+              </div>
+              <div class="col-md" name="tweets">
+                One of three columns
+              </div>
+              <div class="col-sm" name="trends">
+                One of three columns
+              </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
