@@ -12,15 +12,15 @@
 <body>
     <div class="container header">
         <div class="row">
-            <div class="col-md buttons" name="buttons">
-                <i class="fa-solid fa-house"></i><span>Home</span>
-                <i class="fa-sharp fa-solid fa-bell"></i><span>Notifications</span>
-                <i class="fa-solid fa-envelope"></i><span>Messages</span>
+            <div class="col-3 buttons" name="buttons">
+                <div><i class="fa-solid fa-house"></i><span>Home</span></div>
+                <div><i class="fa-sharp fa-solid fa-bell"></i><span>Notifications</span></div>
+                <div><i class="fa-solid fa-envelope"></i><span>Messages</span></div>
             </div>
-            <div class="col-md twitter-icon" name="twitter-icon">
+            <div class="col-6 twitter-icon" name="twitter-icon">
                 <i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i>
             </div>
-            <div class="col-md more-options" name="more options">
+            <div class="col-3 more-options" name="more options">
                 <input type="search" class="form-control ds-input" placeholder="Search Twitter">
                 <div class="profile-img2">
                     <span>Profile picture</span>
@@ -35,35 +35,72 @@
         <span>Cover picture</span>
     </div>
     <div class="main-container">
-        <div class="container profile-bar">
-            <div class="row">
-                <div class="col-md">
-                    <div class="profile-img">
-                        <span>Profile picture</span>
+        <div class="row profile-bar">
+            <div class="col-3">
+                <div class="profile-img">
+                    <span>Profile picture</span>
+                </div>
+            </div>
+            <div class="col-6 profile-menu">
+                <span class="pfm-bt">TWEETS</span>
+                <span class="pfm-bt">FOLLOWING</span>
+                <span class="pfm-bt">FOLLOWERS</span>
+                <span class="pfm-bt">FAVORITES</span>
+            </div>
+            <div class="col-3 settings-button">
+                <button type="button" class="btn btn-light">Edit profile</button>
+            </div>   
+        </div>
+        <div class="row profile-page" name="profile page">
+            <div class="col-3">
+                <div class="links">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <div class="links">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="media">
+                    <div class="media-img">
+                        <span>Media</span>
+                    </div>
+                    <div class="media-img">
+                        <span>Media</span>
+                    </div>
+                    <div class="media-img">
+                        <span>Media</span>
+                    </div>
+                    <div class="media-img">
+                        <span>Media</span>
+                    </div>
+                    <div class="media-img">
+                        <span>Media</span>
+                    </div>
+                    <div class="media-img">
+                        <span>Media</span>
                     </div>
                 </div>
-                <div class="col-md profile-menu">
-                    <span>TWEETS</span>
-                    <span>FOLLOWING</span>
-                    <span>FOLLOWERS</span>
-                    <span>FAVORITES</span>
-                </div>
-                <div class="col-md settings-button">
-                    <button type="button" class="btn btn-light">Edit profile</button>
-                </div>   
             </div>
-        </div>
-        <div class="container profile-page" name="profile page">
-            <div class="row">
-              <div class="col-sm" name="multimedia">
-                One of three columns
-              </div>
-              <div class="col-md" name="tweets">
-                One of three columns
-              </div>
-              <div class="col-sm" name="trends">
-                One of three columns
-              </div>
+            <div class="col-6 tweets" name="tweets">
+                <div class="tweets-bar">
+                    <span class="pfm-bt">Tweets</span>
+                    <span class="pfm-bt">Tweets & replies</span>
+                    <span class="pfm-bt">Photos & videos</span>
+                </div>
+                <div class="tweet">
+                    <div class="tweet-txt"></div>
+                    <div class="tw-media"></div>
+                    <div class="tw-footer">
+                        <i class="fa-solid fa-reply"></i>
+                        <i class="fa-solid fa-repeat"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>View more photos and videos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3" name="trends">
+                <div class="trends"></div>
+                <div class="trends"></div>
             </div>
         </div>
     </div>
